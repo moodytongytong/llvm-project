@@ -89,6 +89,10 @@ clang_tablegen(Builtins.inc -gen-clang-builtins
   SOURCE Builtins.td
   TARGET ClangBuiltins)
 
+#clang_tablegen(BuiltinsAArch64.inc -gen-clang-builtins
+#  SOURCE BuiltinsAArch64.td
+#  TARGET ClangBuiltinsAArch64)
+
 clang_tablegen(BuiltinsBPF.inc -gen-clang-builtins
   SOURCE BuiltinsBPF.td
   TARGET ClangBuiltinsBPF)
